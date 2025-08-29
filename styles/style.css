@@ -1,9 +1,34 @@
 :root {
+    --primary-bg: #192a29;
+    --secondary-bg: #e12a2a;
+    --backup-primary: #469a49;
+    --backup-secondary: #fad02c;
 
+    --font-primary: #151515;
+    --font-secondary: #ffffff;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#screen {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+#header {
+    background-color: green;
+    grid-column: 2 / 4;
+}
+
+#sidebar {
+    background-color: blue;
+    grid-row: 1 / 4;
 }
