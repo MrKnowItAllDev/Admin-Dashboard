@@ -138,6 +138,10 @@
     grid-column: 1 / -1;
 }
 
+#sidebar img {
+    filter: invert(100%) sepia(100%) saturate(300%) hue-rotate(200deg);
+}
+
 #headings h3,
 .trending h3
 {
